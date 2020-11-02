@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">
+            <div id="Logo">
+                <span>C</span>aribe<span>S</span>tore
+                
+            </div> Survey Form
+        </h1>
+        <p id="description">Thank you for taking the time to complete this little survey</p>
+
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label><input type="text" placeholder="Enter your name" id="name" required>
+
+            <label for="email" id="email-label">Email:</label><input type="email" placeholder="Enter your email" id="email" required>
+
+            <label for="number" id="number-label">ID Number:</label><input type="number" id="number" min="10000" max="99999" placeholder="Enter your ID number" required>
+
+            <label for="dropdown" id="dropdown-label">How long have you been using CaribeStore's site? </label>
+            <select name="" id="dropdown" required>
+                <option value="">Pick an option</option>
+                <option value="">Under a year</option>
+                <option value="">1 year</option>
+                <option value="">2 years</option>
+                <option value="">3 years +</option>
+            </select>
+            
+            <div id="radio_buttons">
+                <p>How would you describe your experience on the site so far?</p>
+                <label for="1">
+                    <input type="radio" name="Experience" id="1" value="Amazing" required>Amazing
+                </label>
+                <label for="2">
+                    <input type="radio" name="Experience" id="2" value="Good" required>Good
+                </label>
+                <label for="3">
+                    <input type="radio" name="Experience" id="3" value="It's alright, I guess" required>It's alright, I guess
+                </label>
+                <label for="4">
+                    <input type="radio" name="Experience" id="4" value="IDK" required>IDK
+                </label>
+            </div>
+
+            <div id="checkboxes">
+                <p>What can we do to make the site a better place for our users?</p>
+                <label for="5">
+                    <input type="checkbox" name="Fixes" id="5" value="Have more product options">Have more product options
+                </label>
+                <label for="6">
+                    <input type="checkbox" name="Fixes" id="6" value="Have more sales">Have more sales
+                </label>
+                <label for="7">
+                    <input type="checkbox" name="Fixes" id="7" value="Have Cheaper products">Have Cheaper products
+                </label>
+                <label for="8">
+                    <input type="checkbox" name="Fixes" id="8" value="Improve the user interface">Improve the user interface
+                </label>
+                <label for="9">
+                    <input type="checkbox" name="Fixes" id="9" value="Make your service available globally">Make your service available globally
+                </label>
+            </div>   
+            
+            <label for="Additional" id="additional-label">Comments or Suggestions?</label>
+            <textarea id="Additional" placeholder="Enter any comments or suggestions..."></textarea>
+            
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

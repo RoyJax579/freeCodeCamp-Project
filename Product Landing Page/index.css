@@ -1,0 +1,380 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header
+{
+    border-bottom: 10px double red;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+
+#Logo 
+{
+    display: flex;
+    margin: 0px auto;
+    width: fit-content;
+    border-bottom: 4px solid red;
+    padding: 0px 30px 0px 10px;
+}
+
+#Logo img
+{
+    max-width: 180px;
+    height: auto;
+}
+
+#Logo h1
+{
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 40px;
+    font-weight: lighter;
+}
+
+nav #buttons
+{
+    width: 640px;
+    margin: 0px auto;
+    display: flex;
+}
+
+nav #buttons a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 33.33%;
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.527);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-left: 1px solid rgba(255, 0, 0, 0.527);
+}
+
+
+nav #buttons a:last-of-type
+{
+    border-right: 1px solid rgba(255, 0, 0, 0.527);
+}
+
+nav #buttons a:hover
+{
+    color: white;
+    background-color: rgba(255, 0, 0, 0.527);
+}
+
+section{
+    margin: 0px 30px;
+    padding: 50px;
+    background-color: white;
+}
+
+section #content
+{
+    width: 70%;
+    margin: 0px auto;
+}
+
+#features .content
+{
+    text-align: center;
+    border-bottom: 2px rgba(255, 0, 0, 0.288) dotted;
+    padding: 20px;
+    line-height: 30px;
+}
+
+section iframe
+{
+    width: 90%;
+    height: 400px;
+    display: block;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+#pricingContainer 
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;*/
+
+}
+
+#pricingContainer .box
+{
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.171);
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+    width: 32%;
+    height: auto;
+    display: inline-block;
+}
+
+@media (max-width: 1208px)
+{
+    #pricingContainer 
+    {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        /*display: flex;
+        flex-direction: row;
+        justify-content: normal;
+        flex-flow: wrap;*/
+        border: 1px solid red;
+
+    }
+
+    #pricingContainer .box
+    {
+        width: 46.9%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    section #content
+    {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #pricingContainer 
+    {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+    }
+
+    #pricingContainer .box
+    {
+        width: 45%;
+        margin: 10px;
+        display: inline-block;
+    }
+
+
+}
+
+
+#pricingContainer .box:last-of-type
+{
+    margin-right: 0px;
+}
+
+
+
+
+#pricingContainer .box img
+{
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+}
+
+#pricingContainer .box h2
+{
+    border-top: 2px solid rgba(255, 0, 0, 0.733);
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#pricingContainer .box h3
+{
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.733);
+    
+}
+
+#pricingContainer .box button{
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 0, 0, 0.733);
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#pricingContainer .box button:hover
+{
+    color: white;
+    background-color: rgba(241, 104, 104, 0.548);
+    cursor: pointer;
+}
+
+#newsLetter 
+{
+    background-color: rgba(255, 0, 0, 0.116);
+}
+
+#newsLetter #container
+{
+    width: fit-content;
+    margin: 0px auto;
+    display: flex;
+    padding: 30px 0px;
+}
+
+#newsLetter #container label
+{
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+#newsLetter #container input[type="email"]
+{
+    height: 30px;
+    width: 250px;
+    padding: 20px;
+    border: 2px solid rgba(255, 0, 0, 0.733);
+    border-top-left-radius: 10px;
+    outline: none;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+#newsLetter #container input[type="submit"]
+{
+    border: none;
+    border-bottom-right-radius: 10px;
+    height: 44px;
+    font-size: 17px;
+    padding: 0px 15;
+    background-color: rgba(255, 0, 0, 0.733);
+    color: white;
+    margin-left: -5px;
+}
+
+#newsLetter #container input[type="submit"]:hover
+{
+    color: white;
+    background-color: rgba(235, 72, 72, 0.637);
+    cursor: pointer;
+}
+
+footer
+{
+    background-color: rgba(255, 0, 0, 0.733);
+    color: white;
+}
+
+footer #links
+{
+    display: flex;
+    width: fit-content;
+    display: block;
+    margin: 0px auto;
+    padding: 40px 0px 20px 0px;
+
+}
+
+footer #links a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-right: 20px;
+    width: 33.33%
+}
+
+footer #links a:hover
+{
+    text-decoration: underline;
+}
+
+footer #links a:last-child
+{
+    margin-right: 0px;
+}
+
+footer p
+{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    padding-bottom: 40px;
+}
+
+@media (orientation: portrait){
+
+    header #Logo h1
+    {
+        margin-top: 46px;
+        font-size: 48px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    nav #buttons
+    {
+        max-width: 480px;
+        margin: 0px auto;
+    }
+
+    nav #buttons a
+    {
+       width: 33.33%;
+       font-size: 19px;
+    }
+
+    section{
+        margin: 0px 10px;
+        padding: 30px;
+        background-color: white;
+    }
+
+    section #content
+    {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #pricingContainer 
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    #pricingContainer .box
+    {
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.171);
+        width: 95%;
+        padding: 20px;
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }    
+
+}
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+#main
+{
+  background-color: rgba(65, 63, 63, 0.774);
+  font-family: Arial, Calibri, 'Gill Sans';
+  height: auto;
+  color: white;
+}
+
+#title{
+  border-bottom: 5px solid orange;
+  background-color: rgba(38, 38, 38, 0.774);
+  padding: 30px;
+  text-align: center;
+}
+
+#title h1
+{
+  color: rgb(255, 166, 0);
+  margin-bottom: 10px;
+}
+
+
+#title p
+{
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+#img-div
+{
+  background-color: #1b1b1b;
+  width: 100%;
+  border-bottom: 5px solid orange;
+}
+
+#img-div img
+{
+  max-width: 100%;
+  width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0px auto;
+}
+
+#img-div #img-caption
+{
+  display: block;
+  width: fit-content;
+  margin: 0px auto;
+  font-size: 17px;
+  padding: 20px;
+}
+
+section
+{
+    margin: 0px 10px;
+    background-color: rgba(38, 38, 38, 0.774) ;
+    padding: 70px 0px;
+}
+
+section h1
+{
+  font-size: 26px;
+  text-align: center;
+}
+
+section li 
+{
+  font-size: 17.2px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+section ul
+{
+  max-width: 60%;
+  width: 55%;
+  height: auto;
+  margin: 20px auto;
+}
+
+@media (min-width: 320px){
+  section ul
+  {
+    max-width: 100%;
+    width: 85%;
+  }
+}
+
+
+
+section #link-text
+{
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 30px;
+  text-align: center;
+}
+
+section #link-text a
+{
+  color: orange;
+}
+
+section #link-text a:hover
+{
+  color: rgba(255, 185, 56, 0.795);
+}
+
+
+

@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    
+    background-image: url("https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    color: white;
+    position: static;
+    z-index: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main
+{
+    position: static;
+    z-index: 1;
+    background-color: rgba(53, 51, 39, 0.507);
+    width: 100vw;
+    height: auto;
+}
+
+#title
+{
+    font-size: 50px;
+    padding-top: 60px;
+}
+
+#title span
+{
+    color: orange;
+    font-size: 60px;
+    font-family: Dancing Script;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+#title #Logo
+{
+    color: white;
+    text-decoration: none;
+    font-family: 'Maiden Orange', cursive;
+    font-size: 50px;
+    letter-spacing: 7px;
+    display: inline;
+}
+
+#description
+{
+    font-size: 23px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.966);
+    margin: 10px 0px 20px;
+}
+
+form
+{
+    width: 40%;
+    margin: 0px auto;
+    font-size: 20px;
+    background-color: rgba(3, 3, 3, 0.705);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+
+#title, #description
+{
+    text-align: center;
+}
+
+#radio_buttons label, #checkboxes label, #name-label, #email-label, #number-label, #dropdown-label, #additional-label
+{
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"]
+{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+select
+{
+    width: 103%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+form label, form p
+{
+    margin: 20px 0px 10px;
+}
+
+form input
+{
+    margin-bottom: 10px;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #additional-label, form p
+{
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.952);
+}
+
+#email-label, #number-label, #dropdown-label, #additional-label, form p
+{
+    margin-top: 30px;
+}
+
+input[type="radio"], input[type="checkbox"]
+{
+    margin-right: 10px;
+}
+
+textarea
+{
+    width: 96%;
+    height: 150px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button
+{
+    background-color: orange;
+    color: white;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: rgba(255, 166, 0, 0.801);
+}
+
+@media (orientation: portrait){
+    form{
+        width: 60%;
+    }
+}
+
+
+
+

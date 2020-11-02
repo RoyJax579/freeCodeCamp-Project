@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+body
+{
+    background-color: #FFE53B;
+}
+
+
+/*Header stylin*/
+header{
+    background-color: #ffe53b9d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+}
+
+header .logo
+{
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+    
+    font-weight: bolder;
+}
+
+nav
+{
+    line-height: 60px;
+    width: fit-content;
+    height: auto;
+    justify-self: right;
+}
+
+nav a
+{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover
+{
+    color: #FF2525;
+}
+
+
+
+/*Welcome section*/
+#welcome-section
+{
+    padding: 0px 50px;
+    background: linear-gradient(to bottom, #FFE53B, #FF2525);
+    height: 100vh;
+    position: relative;
+}
+
+#welcome-section #info
+{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+#welcome-section h1
+{
+    font-size: 65px;
+    text-shadow: 1px 2px rgba(255, 196, 0, 0.74);
+}
+
+#welcome-section p
+{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.514);
+}
+
+@media (max-width: 530px)
+{
+    #welcome-section h1
+    {
+        font-size: 60px;
+        text-shadow: 1px 2px rgba(255, 196, 0, 0.74);
+    }
+}
+
+/*Project Section*/
+#projects 
+{
+    padding: 140px 50px 50px 50px;
+    background-color: #ffaa3b;
+    height: 100vh;
+    border-top: 3px solid rgba(255, 166, 0, 0.199);
+}
+
+#projects h1
+{
+    font-size: 45px;
+    border-bottom: 5px ridge black;
+    width: fit-content;
+    color: black;
+    margin: 0px auto;
+    text-shadow: 1px 2px rgba(216, 216, 216, 0.568);
+}
+
+#project-tile
+{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto 0px;
+}
+
+#project-tile a
+{
+    width: 32.33%;
+    height: auto;
+    text-decoration: none;
+    background-color: #181615;
+    margin-left: 10px;
+    box-shadow: 2px 2px rgba(44, 26, 26, 0.404);
+}
+
+#projects img
+{
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0px auto;
+}
+
+#project-tile p
+{
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#project-tile a:hover p
+{
+    color: #ffaa3b;
+}
+
+#project-tile a:hover img
+{
+    opacity: .7;
+}
+
+
+#project-tile a:first-child
+{
+    margin-left: 0px;
+}
+
+@media (max-width: 1100px)
+{
+    #projects 
+    {
+        padding: 140px 50px 50px 50px;
+        height: auto;
+    }
+
+    #project-tile
+    {
+        width: 75%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px auto 0px;
+    }
+
+    #project-tile a
+    {
+        width: 48%;
+        height: auto;
+        text-decoration: none;
+        background-color: #181615;
+        margin-left: 0px;
+        box-shadow: 2px 2px rgba(44, 26, 26, 0.404);
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 850px)
+{
+    #projects 
+    {
+        height: auto;
+    }
+
+    #project-tile
+    {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px auto 0px;
+    }
+
+    #project-tile a
+    {
+        width: 100%;
+        height: auto;
+        text-decoration: none;
+        background-color: #181615;
+        margin-left: 0px;
+        box-shadow: 2px 2px rgba(44, 26, 26, 0.404);
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/*Contacts section*/
+#contacts
+{
+    height: 85vh;
+    padding: 140px 50px 50px 50px;
+    background: linear-gradient(to bottom, #FFE53B, #ff252528);
+    /*border-top: 3px solid rgba(255, 68, 0, 0.432);
+    border-bottom: 3px solid orange;*/
+}
+
+#contacts h1
+{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 2px rgba(146, 146, 146, 0.514);
+}
+
+#contacts #medias
+{
+    
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 40px auto;
+    width: fit-content;
+}
+
+#contacts a
+{
+    display: inline-block;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#contacts a:first-child
+{
+    margin-left: 0px;
+}
+
+#contacts a:hover
+{
+    text-decoration: underline;
+}
+
+/*FOoter*/
+footer
+{
+    height: 15vh;
+    position: relative;
+}
+
+footer p
+{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+@media (max-width: 612px)
+{
+
+    header{
+        padding: 20px 10px;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+        display: block;
+        height: 156px;
+    }
+
+    header .logo
+    {
+        font-family: 'Yellowtail', cursive;
+        font-size: 40px;
+        width: 100vw;
+        height: auto;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    nav
+    {
+        display: block;
+        width: fit-content;
+        margin: 0px auto;
+    }
+
+    #projects 
+    {
+        padding: 160px 50px 50px 50px;
+    }
+
+    #contacts
+    {
+        padding: 180px 50px 50px 50px;
+    }
+    
+}
